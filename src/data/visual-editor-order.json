@@ -6,8 +6,8 @@
     "orient-promise",
     "two-points-heading",
     "two-points-setup",
-    "two-points-visual",
     "two-points-reflection",
+    "two-points-visual",
     "two-points-question-average",
     "two-points-question-meaning",
     "closing-gap-heading",
@@ -87,7 +87,8 @@
       "type": "split",
       "columns": [
         [
-          "two-points-setup"
+          "two-points-setup",
+          "two-points-reflection"
         ],
         [
           "two-points-visual"
@@ -98,18 +99,6 @@
         "gap": "lg",
         "reverse": false,
         "align": "start"
-      }
-    },
-    {
-      "id": "layout-two-points-reflection",
-      "type": "stack",
-      "columns": [
-        [
-          "two-points-reflection"
-        ]
-      ],
-      "props": {
-        "maxWidth": "xl"
       }
     },
     {
