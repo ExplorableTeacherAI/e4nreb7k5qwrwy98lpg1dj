@@ -27,8 +27,8 @@
     "new-curve-setup",
     "new-curve-reflection",
     "new-curve-question-half",
-    "new-curve-visual",
     "new-curve-question-positive",
+    "new-curve-visual",
     "close-heading",
     "close-summary",
     "close-next"
@@ -255,7 +255,8 @@
         [
           "new-curve-setup",
           "new-curve-reflection",
-          "new-curve-question-half"
+          "new-curve-question-half",
+          "new-curve-question-positive"
         ],
         [
           "new-curve-visual"
@@ -266,18 +267,6 @@
         "gap": "lg",
         "reverse": false,
         "align": "start"
-      }
-    },
-    {
-      "id": "layout-new-curve-question-positive",
-      "type": "stack",
-      "columns": [
-        [
-          "new-curve-question-positive"
-        ]
-      ],
-      "props": {
-        "maxWidth": "xl"
       }
     },
     {
