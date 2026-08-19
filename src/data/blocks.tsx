@@ -8,6 +8,14 @@ import { getDefaultValues, variableDefinitions } from "./variables";
 useVariableStore.getState().initialize(getDefaultValues());
 initializeVariableColors(variableDefinitions);
 
+// Lesson sections — Derivatives
+import { derivativeOrientBlocks } from "./sections/derivativeOrient";
+import { derivativeTwoPointsBlocks } from "./sections/derivativeTwoPoints";
+import { derivativeClosingGapBlocks } from "./sections/derivativeClosingGap";
+import { derivativeInstantRateBlocks } from "./sections/derivativeInstantRate";
+import { derivativeNewCurveBlocks } from "./sections/derivativeNewCurve";
+import { derivativeCloseBlocks } from "./sections/derivativeClose";
+
 /**
  * ------------------------------------------------------------------
  * BLOCK CONFIGURATION
@@ -85,5 +93,10 @@ initializeVariableColors(variableDefinitions);
  */
 
 export const blocks: ReactElement[] = [
-    // Start adding your blocks here!
+    ...derivativeOrientBlocks,
+    ...derivativeTwoPointsBlocks,
+    ...derivativeClosingGapBlocks,
+    ...derivativeInstantRateBlocks,
+    ...derivativeNewCurveBlocks,
+    ...derivativeCloseBlocks,
 ];

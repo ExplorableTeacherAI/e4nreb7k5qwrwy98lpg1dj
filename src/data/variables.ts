@@ -81,6 +81,21 @@ export interface VariableDefinition {
  *    { defaultValue: { x: 5, y: 10 }, type: 'object', schema: '{ x: number, y: number }' }
  */
 export const variableDefinitions: Record<string, VariableDefinition> = {
+    // ─────────────────────────────────────────
+    // Derivatives lesson — shared variables
+    // ─────────────────────────────────────────
+    secantGapHours: {
+        defaultValue: 1.5,
+        type: 'number',
+        label: 'Gap between the two moments',
+        description: 'The time gap h between the fixed moment and the second moment on the battery curve',
+        unit: 'h',
+        min: 0.05,
+        max: 3,
+        step: 0.05,
+        color: '#62D0AD',
+    },
+
     // ========================================
     // ADD YOUR VARIABLES HERE
     // ========================================
