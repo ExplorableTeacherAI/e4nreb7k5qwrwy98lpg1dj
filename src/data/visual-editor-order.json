@@ -25,8 +25,8 @@
     "instant-rate-question-corner",
     "new-curve-heading",
     "new-curve-setup",
-    "new-curve-visual",
     "new-curve-reflection",
+    "new-curve-visual",
     "new-curve-question-half",
     "new-curve-question-positive",
     "close-heading",
@@ -253,7 +253,8 @@
       "type": "split",
       "columns": [
         [
-          "new-curve-setup"
+          "new-curve-setup",
+          "new-curve-reflection"
         ],
         [
           "new-curve-visual"
@@ -264,18 +265,6 @@
         "gap": "lg",
         "reverse": false,
         "align": "start"
-      }
-    },
-    {
-      "id": "layout-new-curve-reflection",
-      "type": "stack",
-      "columns": [
-        [
-          "new-curve-reflection"
-        ]
-      ],
-      "props": {
-        "maxWidth": "xl"
       }
     },
     {
