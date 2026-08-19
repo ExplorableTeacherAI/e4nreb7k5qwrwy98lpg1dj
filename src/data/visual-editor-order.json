@@ -250,26 +250,20 @@
     },
     {
       "id": "layout-new-curve-setup",
-      "type": "stack",
+      "type": "split",
       "columns": [
         [
           "new-curve-setup"
-        ]
-      ],
-      "props": {
-        "maxWidth": "xl"
-      }
-    },
-    {
-      "id": "layout-new-curve-visual",
-      "type": "stack",
-      "columns": [
+        ],
         [
           "new-curve-visual"
         ]
       ],
       "props": {
-        "maxWidth": "xl"
+        "ratio": "1:1",
+        "gap": "lg",
+        "reverse": false,
+        "align": "start"
       }
     },
     {
