@@ -139,26 +139,20 @@
     },
     {
       "id": "layout-closing-gap-setup",
-      "type": "stack",
+      "type": "split",
       "columns": [
         [
           "closing-gap-setup"
-        ]
-      ],
-      "props": {
-        "maxWidth": "xl"
-      }
-    },
-    {
-      "id": "layout-closing-gap-visual",
-      "type": "stack",
-      "columns": [
+        ],
         [
           "closing-gap-visual"
         ]
       ],
       "props": {
-        "maxWidth": "xl"
+        "ratio": "1:1",
+        "gap": "lg",
+        "reverse": false,
+        "align": "start"
       }
     },
     {
