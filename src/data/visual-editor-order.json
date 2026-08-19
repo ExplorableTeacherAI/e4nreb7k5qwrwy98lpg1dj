@@ -189,7 +189,8 @@
           "instant-rate-visual"
         ],
         [
-          "instant-rate-naming"
+          "instant-rate-naming",
+          "instant-rate-formula"
         ]
       ],
       "props": {
@@ -197,18 +198,6 @@
         "gap": "lg",
         "reverse": false,
         "align": "start"
-      }
-    },
-    {
-      "id": "layout-instant-rate-formula",
-      "type": "stack",
-      "columns": [
-        [
-          "instant-rate-formula"
-        ]
-      ],
-      "props": {
-        "maxWidth": "xl"
       }
     },
     {
