@@ -7,6 +7,7 @@
     "two-points-heading",
     "two-points-setup",
     "two-points-reflection",
+    "block-1787108907106",
     "two-points-visual",
     "two-points-question-average",
     "two-points-question-meaning",
@@ -88,7 +89,8 @@
       "columns": [
         [
           "two-points-setup",
-          "two-points-reflection"
+          "two-points-reflection",
+          "block-1787108907106"
         ],
         [
           "two-points-visual"

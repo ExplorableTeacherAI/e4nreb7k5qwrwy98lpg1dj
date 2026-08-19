@@ -387,6 +387,12 @@ export const derivativeTwoPointsBlocks: ReactElement[] = [
         </Block>
     </StackLayout>,
 
+    <StackLayout key="layout-block-1787108907106" maxWidth="xl">
+        <Block id="block-1787108907106" padding="sm">
+            <EditableParagraph id="para-block-1787108907106" blockId="block-1787108907106"></EditableParagraph>
+        </Block>
+    </StackLayout>,
+
     <StackLayout key="layout-two-points-question-average" maxWidth="xl">
         <Block id="two-points-question-average" padding="md">
             <EditableParagraph id="para-two-points-question-average" blockId="two-points-question-average">
