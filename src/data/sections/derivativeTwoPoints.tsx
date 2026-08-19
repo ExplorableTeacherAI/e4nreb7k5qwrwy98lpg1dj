@@ -470,4 +470,10 @@ export const derivativeTwoPointsBlocks: ReactElement[] = [
             </EditableParagraph>
         </Block>
     </StackLayout>,
+
+    <StackLayout key="layout-block-1787121224792" maxWidth="xl">
+        <Block id="block-1787121224792" padding="sm">
+            <EditableParagraph id="para-block-1787121224792" blockId="block-1787121224792">this para</EditableParagraph>
+        </Block>
+    </StackLayout>,
 ];

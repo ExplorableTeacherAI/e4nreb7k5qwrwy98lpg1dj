@@ -11,6 +11,7 @@
     "two-points-visual",
     "two-points-question-average",
     "two-points-question-meaning",
+    "block-1787121224792",
     "closing-gap-heading",
     "closing-gap-setup",
     "closing-gap-reflection",
@@ -121,6 +122,18 @@
       "columns": [
         [
           "two-points-question-meaning"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-block-1787121224792",
+      "type": "stack",
+      "columns": [
+        [
+          "block-1787121224792"
         ]
       ],
       "props": {
