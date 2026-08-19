@@ -13,8 +13,8 @@
     "closing-gap-heading",
     "closing-gap-setup",
     "closing-gap-reflection",
-    "closing-gap-visual",
     "closing-gap-question-behaviour",
+    "closing-gap-visual",
     "closing-gap-question-value",
     "instant-rate-heading",
     "instant-rate-naming",
@@ -143,7 +143,8 @@
       "columns": [
         [
           "closing-gap-setup",
-          "closing-gap-reflection"
+          "closing-gap-reflection",
+          "closing-gap-question-behaviour"
         ],
         [
           "closing-gap-visual"
@@ -154,18 +155,6 @@
         "gap": "lg",
         "reverse": false,
         "align": "start"
-      }
-    },
-    {
-      "id": "layout-closing-gap-question-behaviour",
-      "type": "stack",
-      "columns": [
-        [
-          "closing-gap-question-behaviour"
-        ]
-      ],
-      "props": {
-        "maxWidth": "xl"
       }
     },
     {
