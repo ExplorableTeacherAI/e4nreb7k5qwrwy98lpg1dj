@@ -2,8 +2,8 @@
   "version": 3,
   "blockIds": [
     "orient-title",
-    "orient-opening",
     "orient-promise",
+    "orient-opening",
     "two-points-heading",
     "two-points-setup",
     "two-points-reflection",
@@ -48,11 +48,11 @@
       }
     },
     {
-      "id": "layout-orient-opening",
+      "id": "layout-orient-promise",
       "type": "stack",
       "columns": [
         [
-          "orient-opening"
+          "orient-promise"
         ]
       ],
       "props": {
@@ -60,11 +60,11 @@
       }
     },
     {
-      "id": "layout-orient-promise",
+      "id": "editor-full-orient-opening",
       "type": "stack",
       "columns": [
         [
-          "orient-promise"
+          "orient-opening"
         ]
       ],
       "props": {
