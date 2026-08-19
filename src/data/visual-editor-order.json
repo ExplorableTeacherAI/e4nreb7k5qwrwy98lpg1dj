@@ -1,4 +1,404 @@
 {
-  "version": 2,
-  "blockIds": []
+  "version": 3,
+  "blockIds": [
+    "orient-title",
+    "orient-opening",
+    "orient-promise",
+    "two-points-heading",
+    "two-points-setup",
+    "two-points-visual",
+    "two-points-reflection",
+    "two-points-question-average",
+    "two-points-question-meaning",
+    "closing-gap-heading",
+    "closing-gap-setup",
+    "closing-gap-visual",
+    "closing-gap-reflection",
+    "closing-gap-question-behaviour",
+    "closing-gap-question-value",
+    "instant-rate-heading",
+    "instant-rate-naming",
+    "instant-rate-visual",
+    "instant-rate-formula",
+    "instant-rate-misconception",
+    "instant-rate-question-slope",
+    "instant-rate-question-corner",
+    "new-curve-heading",
+    "new-curve-setup",
+    "new-curve-visual",
+    "new-curve-reflection",
+    "new-curve-question-half",
+    "new-curve-question-positive",
+    "close-heading",
+    "close-summary",
+    "close-next"
+  ],
+  "rows": [
+    {
+      "id": "layout-orient-title",
+      "type": "stack",
+      "columns": [
+        [
+          "orient-title"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-orient-opening",
+      "type": "stack",
+      "columns": [
+        [
+          "orient-opening"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-orient-promise",
+      "type": "stack",
+      "columns": [
+        [
+          "orient-promise"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-two-points-heading",
+      "type": "stack",
+      "columns": [
+        [
+          "two-points-heading"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-two-points-setup",
+      "type": "split",
+      "columns": [
+        [
+          "two-points-setup"
+        ],
+        [
+          "two-points-visual"
+        ]
+      ],
+      "props": {
+        "ratio": "1:1",
+        "gap": "lg",
+        "reverse": false,
+        "align": "start"
+      }
+    },
+    {
+      "id": "layout-two-points-reflection",
+      "type": "stack",
+      "columns": [
+        [
+          "two-points-reflection"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-two-points-question-average",
+      "type": "stack",
+      "columns": [
+        [
+          "two-points-question-average"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-two-points-question-meaning",
+      "type": "stack",
+      "columns": [
+        [
+          "two-points-question-meaning"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-closing-gap-heading",
+      "type": "stack",
+      "columns": [
+        [
+          "closing-gap-heading"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-closing-gap-setup",
+      "type": "stack",
+      "columns": [
+        [
+          "closing-gap-setup"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-closing-gap-visual",
+      "type": "stack",
+      "columns": [
+        [
+          "closing-gap-visual"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-closing-gap-reflection",
+      "type": "stack",
+      "columns": [
+        [
+          "closing-gap-reflection"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-closing-gap-question-behaviour",
+      "type": "stack",
+      "columns": [
+        [
+          "closing-gap-question-behaviour"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-closing-gap-question-value",
+      "type": "stack",
+      "columns": [
+        [
+          "closing-gap-question-value"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-instant-rate-heading",
+      "type": "stack",
+      "columns": [
+        [
+          "instant-rate-heading"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-instant-rate-naming",
+      "type": "stack",
+      "columns": [
+        [
+          "instant-rate-naming"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-instant-rate-visual",
+      "type": "stack",
+      "columns": [
+        [
+          "instant-rate-visual"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-instant-rate-formula",
+      "type": "stack",
+      "columns": [
+        [
+          "instant-rate-formula"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-instant-rate-misconception",
+      "type": "stack",
+      "columns": [
+        [
+          "instant-rate-misconception"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-instant-rate-question-slope",
+      "type": "stack",
+      "columns": [
+        [
+          "instant-rate-question-slope"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-instant-rate-question-corner",
+      "type": "stack",
+      "columns": [
+        [
+          "instant-rate-question-corner"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-new-curve-heading",
+      "type": "stack",
+      "columns": [
+        [
+          "new-curve-heading"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-new-curve-setup",
+      "type": "stack",
+      "columns": [
+        [
+          "new-curve-setup"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-new-curve-visual",
+      "type": "stack",
+      "columns": [
+        [
+          "new-curve-visual"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-new-curve-reflection",
+      "type": "stack",
+      "columns": [
+        [
+          "new-curve-reflection"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-new-curve-question-half",
+      "type": "stack",
+      "columns": [
+        [
+          "new-curve-question-half"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-new-curve-question-positive",
+      "type": "stack",
+      "columns": [
+        [
+          "new-curve-question-positive"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-close-heading",
+      "type": "stack",
+      "columns": [
+        [
+          "close-heading"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-close-summary",
+      "type": "stack",
+      "columns": [
+        [
+          "close-summary"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    },
+    {
+      "id": "layout-close-next",
+      "type": "stack",
+      "columns": [
+        [
+          "close-next"
+        ]
+      ],
+      "props": {
+        "maxWidth": "xl"
+      }
+    }
+  ]
 }
