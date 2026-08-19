@@ -12,8 +12,8 @@
     "two-points-question-meaning",
     "closing-gap-heading",
     "closing-gap-setup",
-    "closing-gap-visual",
     "closing-gap-reflection",
+    "closing-gap-visual",
     "closing-gap-question-behaviour",
     "closing-gap-question-value",
     "instant-rate-heading",
@@ -145,6 +145,7 @@
           "closing-gap-setup"
         ],
         [
+          "closing-gap-reflection",
           "closing-gap-visual"
         ]
       ],
@@ -153,18 +154,6 @@
         "gap": "lg",
         "reverse": false,
         "align": "start"
-      }
-    },
-    {
-      "id": "layout-closing-gap-reflection",
-      "type": "stack",
-      "columns": [
-        [
-          "closing-gap-reflection"
-        ]
-      ],
-      "props": {
-        "maxWidth": "xl"
       }
     },
     {
