@@ -142,10 +142,10 @@
       "type": "split",
       "columns": [
         [
-          "closing-gap-setup"
+          "closing-gap-setup",
+          "closing-gap-reflection"
         ],
         [
-          "closing-gap-reflection",
           "closing-gap-visual"
         ]
       ],
