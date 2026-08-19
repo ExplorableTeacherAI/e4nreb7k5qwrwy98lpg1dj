@@ -14,6 +14,20 @@ import { Figure } from "@/components/molecules";
 import { useVar, useSetVar } from "@/stores";
 import { clamp } from "@/lib/motion";
 import {
+    T_MIN,
+    T_MAX,
+    battery,
+    averageRate,
+    fmtRate,
+    fmtHours,
+    makeScales,
+    ACCENT,
+    ACCENT_ALT,
+    INK,
+    INK_SOFT,
+    GRID,
+} from "./batteryCurve";
+import {
     getVariableInfo,
     clozePropsFromDefinition,
     choicePropsFromDefinition,
@@ -21,43 +35,17 @@ import {
 } from "../variables";
 
 /* ------------------------------------------------------------------ */
-/*  Model: a phone battery draining across an evening                  */
+/*  Figure geometry (model + formats live in ./batteryCurve)           */
 /* ------------------------------------------------------------------ */
 
-const T_MIN = 0;
-const T_MAX = 5;
-const P_MIN = 30;
-const P_MAX = 100;
 const MIN_GAP = 0.4;
-
-/** Battery percentage after t hours. */
-const battery = (t: number) => 100 - 5 * t - 1.6 * t * t;
-
 const VIEW_WIDTH = 640;
 const VIEW_HEIGHT = 400;
 const PLOT = { x0: 60, x1: 600, y0: 90, y1: 330 };
+const { xOf, yOf, tOfX, curvePath } = makeScales(PLOT);
 
-const xOf = (t: number) => PLOT.x0 + ((t - T_MIN) / (T_MAX - T_MIN)) * (PLOT.x1 - PLOT.x0);
-const yOf = (p: number) => PLOT.y1 - ((p - P_MIN) / (P_MAX - P_MIN)) * (PLOT.y1 - PLOT.y0);
-const tOfX = (x: number) =>
-    clamp(T_MIN + ((x - PLOT.x0) / (PLOT.x1 - PLOT.x0)) * (T_MAX - T_MIN), T_MIN, T_MAX);
-
-/** One formatter for the drain rate, used by the figure and the caption. */
-const fmtRate = (v: number) => `${v.toFixed(1)} %/h`;
-const fmtHours = (v: number) => `${v.toFixed(1)} h`;
-
-const EARLY_COLOR = "#62D0AD";
-const LATE_COLOR = "#8E90F5";
-const INK = "#334155";
-const INK_SOFT = "#64748B";
-
-const curvePath = (() => {
-    const points: string[] = [];
-    for (let t = T_MIN; t <= T_MAX + 1e-9; t += 0.05) {
-        points.push(`${t === T_MIN ? "M" : "L"} ${xOf(t).toFixed(2)} ${yOf(battery(t)).toFixed(2)}`);
-    }
-    return points.join(" ");
-})();
+const EARLY_COLOR = ACCENT;
+const LATE_COLOR = ACCENT_ALT;
 
 /* ------------------------------------------------------------------ */
 /*  The bespoke figure                                                 */
@@ -174,8 +162,8 @@ function TwoIntervalsDrawing() {
     const lateEnd = useVar<number>("lateEnd", 4.5);
     const highlight = useVar<string>("chordHighlight", "");
 
-    const earlyRate = (battery(earlyEnd) - battery(earlyStart)) / (earlyEnd - earlyStart);
-    const lateRate = (battery(lateEnd) - battery(lateStart)) / (lateEnd - lateStart);
+    const earlyRate = averageRate(earlyStart, earlyEnd);
+    const lateRate = averageRate(lateStart, lateEnd);
 
     const dimOf = (id: string) => (highlight && highlight !== id ? 0.32 : 1);
 
@@ -257,7 +245,7 @@ function TwoIntervalsDrawing() {
                             y1={yOf(p)}
                             x2={PLOT.x1}
                             y2={yOf(p)}
-                            stroke="#E2E8F0"
+                            stroke={GRID}
                             strokeWidth={1.5}
                         />
                         <text
