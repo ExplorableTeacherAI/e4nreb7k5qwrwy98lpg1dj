@@ -17,8 +17,8 @@
     "closing-gap-visual",
     "closing-gap-question-value",
     "instant-rate-heading",
-    "instant-rate-naming",
     "instant-rate-visual",
+    "instant-rate-naming",
     "instant-rate-formula",
     "instant-rate-misconception",
     "instant-rate-question-slope",
@@ -183,26 +183,20 @@
     },
     {
       "id": "layout-instant-rate-naming",
-      "type": "stack",
+      "type": "split",
       "columns": [
+        [
+          "instant-rate-visual"
+        ],
         [
           "instant-rate-naming"
         ]
       ],
       "props": {
-        "maxWidth": "xl"
-      }
-    },
-    {
-      "id": "layout-instant-rate-visual",
-      "type": "stack",
-      "columns": [
-        [
-          "instant-rate-visual"
-        ]
-      ],
-      "props": {
-        "maxWidth": "xl"
+        "ratio": "1:1",
+        "gap": "lg",
+        "reverse": false,
+        "align": "start"
       }
     },
     {
