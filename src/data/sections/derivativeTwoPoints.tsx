@@ -9,6 +9,7 @@ import {
     InlineFeedback,
     InlineLinkedHighlight,
     InteractionHintSequence,
+    InlineTooltip,
 } from "@/components/atoms";
 import { Figure } from "@/components/molecules";
 import { useVar, useSetVar } from "@/stores";
@@ -473,7 +474,7 @@ export const derivativeTwoPointsBlocks: ReactElement[] = [
 
     <StackLayout key="layout-block-1787121224792" maxWidth="xl">
         <Block id="block-1787121224792" padding="sm">
-            <EditableParagraph id="para-block-1787121224792" blockId="block-1787121224792">this para /</EditableParagraph>
+            <EditableParagraph id="para-block-1787121224792" blockId="block-1787121224792">this para  <InlineTooltip tooltip={"Tooltip content"} color={"#F59E0B"} bgColor={"rgba(245, 158, 11, 0.15)"} position={"auto"} maxWidth={400} id={"inlineTooltip-b326cc9c-ad34-4cc3-86f2-a45b0699c14f"}>term</InlineTooltip></EditableParagraph>
         </Block>
     </StackLayout>,
 ];
